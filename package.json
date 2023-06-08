@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./src/index.ts",
-    "dev2": "concurrently \"npx tsc --watch\" \"nodemon dist/index.js\"",
-    "build": "tsc --watch"
+    "start-dev": "nodemon dist/index.js",
+    "dev": "concurrently \"npm run build -- --watch\" \"npm run start-dev\"",
+    "build": "tsc",
+    "start": "node ./dist"
   },
   "keywords": [],
   "author": "",
