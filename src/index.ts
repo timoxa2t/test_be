@@ -10,7 +10,11 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.listen(80, () => {
-  console.log('Listening on port 443');
+app.get('/asdasd', (req, res) => {
+  res.json(JSON.stringify({text:'asdasdasd'}))  
+});
+
+app.listen(3000, () => {
+  console.log('Listening on port 3000');
 });
 
