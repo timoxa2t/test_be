@@ -8,7 +8,7 @@
     "start-dev": "nodemon dist/index.js",
     "dev": "concurrently \"npm run build -- --watch\" \"npm run start-dev\"",
     "build": "tsc",
-    "start": "node ./dist"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
